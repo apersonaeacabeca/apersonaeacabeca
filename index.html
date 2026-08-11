@@ -75,18 +75,37 @@
     display:block;
     filter: saturate(1.05);
   }
-.lettering{
+ .lettering{
     display:block;
-    margin:6px auto 14px;
-    max-width:120px;
+    width:100%;
+    max-width:240px;
     height:auto;
+    margin:4px auto 22px;
   }
-  .benfeitoria-label{
+  .teaser{
     text-align:center;
-    font-size:12px;
-    letter-spacing:0.08em;
-    color:var(--muted);
     margin:0 0 24px;
+  }
+  .teaser-question{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:19px;
+    color:var(--paper);
+    margin-bottom:6px;
+  }
+  .teaser-tag{
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--paper);
+    font-weight:600;
+  }
+  .teaser-tag span{
+    color:var(--muted);
+    text-transform:none;
+    letter-spacing:normal;
+    font-weight:400;
   }
   .sub{
     color:var(--muted);
@@ -195,9 +214,12 @@
 
   <main class="card">
     <div class="eyebrow">Chave Pix</div>
-      <div class="eyes-slot"><img src="data:image/png;base64,[...mesmo base64 dos olhos...]" alt="Close dos olhos com maquiagem, imagem de identidade visual de A Persona e a Cabeça"></div>
-    <img class="lettering" src="data:image/png;base64,[...mesmo base64 da logo...]" alt="A Persona e a Cabeça">
-    <p class="benfeitoria-label">Nosso chapéu - benfeitoria</p>
+   <img class="lettering" src="data:image/png;base64,[...]" alt="A Persona e a Cabeça">
+    <div class="eyes-slot"><img src="data:image/png;base64,[...]" alt="Close dos olhos com maquiagem, imagem de identidade visual de A Persona e a Cabeça"></div>
+    <div class="teaser">
+      <p class="teaser-question">A Persona e A Cabeça</p>
+      <p class="teaser-tag">Nosso chapéu </span>benfeitoria</span></p>
+    </div>
     <p class="sub">Aponte a câmera para o QR Code ou use o Pix Copia e Cola. Valor em aberto — escolha um valor para colaborar com A Persona e A Cabeça no seu aplicativo bancário.</p>
 
     <div class="qr-wrap">
